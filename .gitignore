@@ -1,0 +1,94 @@
+# Ignore system and build files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.npm
+
+# Backend database
+software/backend/monitoring.db
+software/backend/*.db
+*.db
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+software/firmware/.pio/
+software/firmware/.pioenvs/
+
+# Arduino IDE
+*.hex
+*.eep
+*.elf
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build outputs
+build/
+dist/
+*.bin
+*.map
+
+# KiCad backups and autosaves
+*-bak
+*-backup
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+fp-info-cache
+*.net
+
+# SolidWorks
+~$*.SLDPRT
+~$*.SLDASM
+~$*.SLDDRW
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Testing
+coverage/
+.nyc_output/
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/

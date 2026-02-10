@@ -1,0 +1,35 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 5f9a1e3d-8b2c-4a7f-9d1e-6c3b4a5f8e9d)
+
+  (paper "A4")
+
+  (title_block
+    (title "PV Monitoring System")
+    (date "2026-02-10")
+    (rev "1.0")
+    (company "MonitoringSystem")
+    (comment 1 "Main schematic for PV monitoring system")
+  )
+
+  (lib_symbols
+    (symbol "Connector:Conn_01x02_Male" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (id 0) (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Conn_01x02_Male" (id 1) (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+    )
+  )
+
+  (wire (pts (xy 100 100) (xy 150 100))
+    (stroke (width 0.25) (type default) (color 0 0 0 0))
+    (uuid 1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d)
+  )
+
+  (text "ESP32 based monitoring system for PV generation" (at 50 50 0)
+    (effects (font (size 2 2)) (justify left bottom))
+    (uuid 2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e)
+  )
+)

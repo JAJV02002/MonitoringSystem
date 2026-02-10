@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PV Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌞 PV Monitoring System</h1>
+            <div class="status" id="status">
+                <span class="status-indicator"></span>
+                <span id="statusText">Connecting...</span>
+            </div>
+        </header>
+
+        <div class="dashboard">
+            <!-- Current Readings -->
+            <section class="card">
+                <h2>Current Readings</h2>
+                <div class="readings-grid">
+                    <div class="reading-card voltage">
+                        <div class="reading-icon">⚡</div>
+                        <div class="reading-value" id="voltage">--</div>
+                        <div class="reading-unit">Volts</div>
+                    </div>
+                    <div class="reading-card current">
+                        <div class="reading-icon">🔌</div>
+                        <div class="reading-value" id="current">--</div>
+                        <div class="reading-unit">Amps</div>
+                    </div>
+                    <div class="reading-card power">
+                        <div class="reading-icon">💡</div>
+                        <div class="reading-value" id="power">--</div>
+                        <div class="reading-unit">Watts</div>
+                    </div>
+                    <div class="reading-card temperature">
+                        <div class="reading-icon">🌡️</div>
+                        <div class="reading-value" id="temperature">--</div>
+                        <div class="reading-unit">°C</div>
+                    </div>
+                </div>
+                <div class="last-update">
+                    Last update: <span id="lastUpdate">Never</span>
+                </div>
+            </section>
+
+            <!-- Statistics -->
+            <section class="card">
+                <h2>Statistics</h2>
+                <div class="stats-controls">
+                    <button onclick="loadStats('day')" class="active" id="btn-day">Today</button>
+                    <button onclick="loadStats('week')" id="btn-week">This Week</button>
+                    <button onclick="loadStats('month')" id="btn-month">This Month</button>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Avg Voltage</div>
+                        <div class="stat-value" id="avgVoltage">--</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Max Power</div>
+                        <div class="stat-value" id="maxPower">--</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Energy Generated</div>
+                        <div class="stat-value" id="energyKwh">--</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Avg Temperature</div>
+                        <div class="stat-value" id="avgTemp">--</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Charts -->
+            <section class="card chart-card">
+                <h2>Power Generation</h2>
+                <canvas id="powerChart"></canvas>
+            </section>
+
+            <!-- Alerts -->
+            <section class="card">
+                <h2>Recent Alerts</h2>
+                <div id="alertsList" class="alerts-list">
+                    <p class="no-alerts">No alerts</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
