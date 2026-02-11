@@ -7,11 +7,10 @@ A complete monitoring system for photovoltaic (solar) generation systems. This r
 
 ## 🌟 Features
 
-- **Real-time Monitoring**: Track voltage, current, power, and temperature
+- **Real-time Monitoring**: Track voltage, current and power
 - **WiFi Connectivity**: ESP32-based wireless data transmission
 - **Web Dashboard**: Modern, responsive web interface
 - **Historical Data**: Store and analyze performance over time
-- **Alert System**: Automated alerts for abnormal conditions
 - **Statistics**: Daily, weekly, and monthly analytics
 - **Open Source**: Complete hardware and software designs
 
@@ -23,7 +22,6 @@ MonitoringSystem/
 │   ├── cad/                      # 3D designs (SolidWorks & STL files)
 │   │   ├── Enclosure_Main.STL
 │   │   ├── Enclosure_Lid.STL
-│   │   ├── Mounting_Bracket.STL
 │   │   └── README.md
 │   └── pcb/
 │       └── kicad/                # KiCad PCB project files
@@ -113,9 +111,8 @@ cd software/frontend
 - **LM2596**: Buck converter for power supply
 
 ### Enclosure
-- **Material**: ABS/PETG (3D printed or injection molded)
+- **Material**: ABS/PETG/PLA (3D printed or injection molded)
 - **Dimensions**: 120mm × 80mm × 50mm
-- **Rating**: IP54 (weather resistant)
 - **Mounting**: Wall, DIN rail, or pole mount
 
 ## 💻 Software Stack
@@ -148,16 +145,13 @@ Comprehensive documentation is available in the `docs/` directory:
 ## 📈 Specifications
 
 ### Measurement Ranges
-- **Voltage**: 0-50V DC
-- **Current**: 0-30A DC
+- **Voltage**: 0-127V AC(RMS values)
+- **Current**: 0-30A AC(RMS values)
 - **Power**: Calculated (V × I)
-- **Temperature**: -10°C to +85°C
 
 ### Accuracy
 - **Voltage**: ±2%
 - **Current**: ±3%
-- **Temperature**: ±0.5°C
-
 ### Communication
 - **Protocol**: HTTP/REST API
 - **Connectivity**: WiFi 802.11 b/g/n (2.4GHz)
