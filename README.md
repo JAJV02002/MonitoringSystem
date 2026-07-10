@@ -1,9 +1,9 @@
 # PV Monitoring System
 
-A complete monitoring system for photovoltaic (solar) generation systems. This repository includes all necessary files to recreate the entire project: 3D CAD files, PCB design files (KiCad), firmware code (ESP32), backend server, and web frontend.
+A complete monitoring system for photovoltaic (solar) generation systems. This repository includes all necessary files to recreate the entire project: 3D CAD files, PCB design files (KiCad), firmware, backend server, and web frontend.
 
 ![System Status](https://img.shields.io/badge/status-production-green)
-![License](https://img.shields.io/badge/license-MIT-blue)
+![License](https://img.shields.io/badge/license-CC%20BY%204.0-lightblue)
 
 ## 🌟 Features
 
