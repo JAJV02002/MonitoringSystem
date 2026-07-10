@@ -222,6 +222,7 @@ Contributions are welcome! Please feel free to submit issues, feature requests, 
 
 This project is suitable for:
 - University projects
+- Research projects
 - Maker communities
 - IoT learning
 - Renewable energy education
