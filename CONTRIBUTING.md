@@ -210,7 +210,7 @@ Open an issue for questions or start a discussion.
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the MIT License.
+By contributing, you agree that your contributions will be licensed under the Creative Commons Attribution 4.0 License.
 
 ---
 
